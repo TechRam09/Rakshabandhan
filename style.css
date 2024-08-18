@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.instruction,
+.book {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  min-width: 900px;
+  min-height: 700px;
+  background: linear-gradient(rgb(105 115 60), rgb(11 15 19));
+  position: relative;
+}
+
+#button {
+  background: rgb(0, 0, 0);
+  color: white;
+  padding: 10px;
+  margin-top: 40px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 0;
+}
+
+.motive {
+  margin-left: 10%;
+  padding-top: 20%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.motive span {
+  background: yellow;
+  color: black;
+}
+
+.book {
+  width: 847px;
+  height: 654.5px;
+  transform: translate(-50%, -50%) rotatex(10deg) rotatey(-10deg);
+  transform-style: preserve-3d;
+}
+
+.page {
+  width: 423.5px;
+  height: 654.5px;
+  background: #eee;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 1s;
+}
